@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div classe="container reverse">
+        <div class="reverse">
+            <section class="main-form">
+                <h1>Contact Form</h1>
+            </section>
+            <form class="form" action="" method="post">
+                <h2>Report Anti-Social Behavior</h2>
+                <ul>
+                    <li>
+                        <label for="name">First Name</label>
+                        <br>
+                        <input type="text" id="name" name="user_name" placeholder="ex. Jane Doe" required>
+                    </li>
+                    <li>
+                        <label for="mail">Email Address</label>
+                        <br>
+                        <input type="email" id="mail" name="user_mail" placeholder="ex. jane.doe@example.com"
+                            pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                            required>
+                    </li>
+                    <li>
+                        <label for="phone">Contact Number (*Optional)</label>
+                        <br>
+                        <input type="number" id="phone" name="user_phone">
+                    </li>
+                    <li>
+                        <label for="msg">What type of incident(s) has happened?
+                            Please give as much information you can</label>
+                        <br>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                </ul>
+                <p>How do you prefer to be contacted?</p>
+                <ul>
+                    <li>
+                        <input type="radio" id="contactChoice1" name="contact" value="email">
+                        <label for="contactChoice1">Email</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="contactChoice2" name="contact" value="phone">
+                        <label for="contactChoice2">Telephone</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="contactChoice3" name="contact" value="mail">
+                        <label for="contactChoice3">Letter</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="contactChoice4" name="contact" value="mail">
+                        <label for="contactChoice4">Home Visit</label>
+                    </li>
+                </ul>
+                <button class="button" type="submit">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
